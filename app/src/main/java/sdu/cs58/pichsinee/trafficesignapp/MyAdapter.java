@@ -50,9 +50,11 @@ public class MyAdapter extends BaseAdapter{
         ImageView imageView = view1.findViewById(R.id.imageView);
         TextView titleTextView = view1.findViewById(R.id.txv1);
         TextView detailTextView = view1.findViewById(R.id.txv2);
-        
 
-
+        //Show data
+        imageView.setImageResource(ints[i]);
+        titleTextView.setText(titleStrings[i]);
+        detailTextView.setText(detailStrings[i]);
         return null;
     }
 }//end Class
